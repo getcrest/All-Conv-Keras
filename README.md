@@ -25,4 +25,4 @@ The above model easily achieves more than 90% accuracy after the first 350 itera
 
 ## Licensing
 
-Mit License
+MIT License
