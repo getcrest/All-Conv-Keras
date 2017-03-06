@@ -4,7 +4,7 @@ from keras.layers.convolutional import Convolution2D, GlobalAveragePooling2D
 from keras.optimizers import SGD
 import cv2, numpy as np
 
-def VGG_16(weights_path=None):
+def all_cnn(weights_path=None):
     model = Sequential()
     model.add(Convolution2D(96, 3, 3, border_mode = 'same', input_shape=(3, 32, 32)))
     model.add(Activation('relu'))
@@ -39,7 +39,7 @@ if __name__ == "__main__":
     im = cv2.resize(cv2.imread('image.jpg'), (32, 32)).astype(np.float32)
 
     # Test pretrained model
-    model = VGG_16('weights.994-0.56.hdf5')
+    model = all_cnn('weights.994-0.56.hdf5')
     sgd = SGD(lr=0.1, decay=1e-6, momentum=0.9, nesterov=True)
     model.compile(optimizer=sgd, loss='categorical_crossentropy')
     out = model.predict(im)
