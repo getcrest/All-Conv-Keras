@@ -2,7 +2,7 @@
 
 ## Source
 
-Original paper can be found [here]((https://arxiv.org/abs/1412.6806#)).
+Original paper can be found [here](https://arxiv.org/abs/1412.6806#).
 
 ## Requirements
 
