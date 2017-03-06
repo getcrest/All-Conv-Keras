@@ -2,11 +2,8 @@
 
 ## Source
 
-<<<<<<< HEAD
 Original paper can be found [here](https://arxiv.org/abs/1412.6806#).
-=======
 'Striving for Simplicity: The All Convolutional Net' The original paper can be found [here](https://arxiv.org/abs/1412.6806#).
->>>>>>> 670daca98040bdb666beb939519cc2b1d6ad8a64
 
 ## Requirements
 
