@@ -129,11 +129,6 @@ history_callback = model.fit_generator(datagen.flow(X_train, Y_train,
                         nb_epoch=nb_epoch, validation_data=(X_test, Y_test), callbacks=callbacks_list, verbose=0)
 
 im = cv2.resize(cv2.imread('image.jpg'), (224, 224)).astype(np.float32)
-im[:,:,0] -= 103.939
-im[:,:,1] -= 116.779
-im[:,:,2] -= 123.68
-im = im.transpose((2,0,1))
-im = np.expand_dims(im, axis=0)
 out = model.predict(im)
 print np.argmax(out)
 
