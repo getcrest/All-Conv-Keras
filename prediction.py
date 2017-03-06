@@ -28,7 +28,6 @@ def all_cnn(weights_path=None):
 
     model.add(GlobalAveragePooling2D())
     model.add(Activation('softmax'))
-    model = make_parallel(model, 4)
 
     if weights_path:
         model.load_weights(weights_path)
