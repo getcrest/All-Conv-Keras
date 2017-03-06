@@ -2,7 +2,11 @@
 
 ## Source
 
+<<<<<<< HEAD
+Original paper can be found [here](https://arxiv.org/abs/1412.6806#).
+=======
 'Striving for Simplicity: The All Convolutional Net' The original paper can be found [here](https://arxiv.org/abs/1412.6806#).
+>>>>>>> 670daca98040bdb666beb939519cc2b1d6ad8a64
 
 ## Requirements
 
@@ -10,6 +14,7 @@
 - h5py (if you want to save your model)
 - numpy
 - pandas (if you want to save the logs of your model)
+- cv2 (for image resizing)
 
 ## External data
 
@@ -18,6 +23,14 @@ In this implementation we are using the Cifar10 dataset. Either you can import t
 Or
 
 You can Download the dataset from [here](https://www.cs.toronto.edu/~kriz/cifar.html).
+
+## Usage
+
+If you want to run the model without using the pretrained weights then: Run `python allconv.py`
+
+Model and Usage demo: Run `python transfer_learning.py`
+
+You can doenload the weights from here: [weights.994-0.56.hdf5](https://doc-0s-38-docs.googleusercontent.com/docs/securesc/vpocm17pitg002qmgv62depufpsg2pjb/ll4rh66jflb55d2m3cd08nfd2bo3e6jg/1488794400000/16597602046324852878/16597602046324852878/0B3eKX5eGCnJXWkRubkl2azQ3WXc?e=download)
 
 ## Results
 
