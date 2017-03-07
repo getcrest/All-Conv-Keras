@@ -35,3 +35,15 @@ The above model easily achieves more than 90% accuracy after the first 350 itera
 ## Licensing
 
 MIT License
+
+## Additional Notes
+
+### Use of Scheduler:
+
+In the original paper learning rate of 'γ' and  scheduler S = "e1 ,e2 , e3" were used in which γ is multiplied by a fixed multiplier of 0.1 after e1. e2 and e3 epochs respectively. (where e1 = 200, e2 = 250, e3 = 300)
+But in our implmentation we have went with a learning rate of 0.1, decay of 1e-6 and momentum of 0.9. This is done to make the model converge to a desirable accuracy in the first 100 epoch (Benificial for those who have a constrain on the computation power, feel free to play around with the learning rate and scheduler)
+
+### Data Augmentation:
+
+In the original paper very extensive data augmentation were used such as placing the cifar10 images of size 32 × 32 into larger 126 × 126 pixel images and can hence be heavily scaled, rotated and color augmented.
+In our implementation we have only donw very mild data augmentation. It is hoped that the accuracy will increase if you increase the data augmentation.
