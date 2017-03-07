@@ -24,9 +24,9 @@ You can Download the dataset from [here](https://www.cs.toronto.edu/~kriz/cifar.
 
 If you want to run the model without using the pretrained weights then: Run `python allconv.py`
 
-Model and Usage demo: Run `python transfer_learning.py`
 
 You can download the weights from here: [weights.994-0.56.hdf5](https://drive.google.com/file/d/0B3eKX5eGCnJXWkRubkl2azQ3WXc/view?usp=sharing)
+And use the weights to retrain your model.
 
 ## Results
 
