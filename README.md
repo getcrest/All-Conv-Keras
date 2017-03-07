@@ -46,4 +46,4 @@ But in our implmentation we have went with a learning rate of 0.1, decay of 1e-6
 ### Data Augmentation:
 
 In the original paper very extensive data augmentation were used such as placing the cifar10 images of size 32 × 32 into larger 126 × 126 pixel images and can hence be heavily scaled, rotated and color augmented.
-In our implementation we have only donw very mild data augmentation. It is hoped that the accuracy will increase if you increase the data augmentation.
+In our implementation we have only done very mild data augmentation. We hope that the accuracy will increase if you increase the data augmentation.
