@@ -4,6 +4,8 @@
 
 'Striving for Simplicity: The All Convolutional Net' The original paper can be found [here](https://arxiv.org/abs/1412.6806#).
 
+We have also tried explaning the important concept of the paper on our [Medium Blog](https://medium.com/@matelabs_ai/how-these-researchers-tried-something-unconventional-to-came-out-with-a-smaller-yet-better-image-544327f30e72#.i3227lyhb).
+
 ## Requirements
 
 - keras with Tensorflow backend (keras version 1.0.4 or later)
