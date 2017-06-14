@@ -11,8 +11,10 @@ from keras.models import Model
 from keras.layers.core import Lambda
 from keras.callbacks import ModelCheckpoint
 import pandas
+import cv2
+import numpy as np
 
-
+K.set_image_dim_ordering('tf')
 def make_parallel(model, gpu_count):
     def get_slice(data, idx, parts):
         shape = tf.shape(data)
